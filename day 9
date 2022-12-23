@@ -1,0 +1,12 @@
+def is_disarium(x):
+    a=1
+    result=0
+    for i in map(int,str(k)):
+        result += i**a
+        a += 1
+    if result == k:
+        return "disarium number"
+    else:
+        return "not a disarium number"
+k=int(input())
+print(is_disarium(k))
